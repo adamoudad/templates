@@ -2,6 +2,7 @@
 % \usepackage[T1]{fontenc}
 % \usepackage[utf8]{inputenc}
 % \usepackage[francais]{babel}
+% \usepackage[backend=bibtex]{biblatex} %(a lot)Better than bibtex
 % \usepackage{lastpage}           % Obtenir le nombre de pages
 % \usepackage{fancyhdr}           % en-têtes et pieds de pages
 % \usepackage{tabularx}           % tableaux
@@ -20,6 +21,8 @@
 % \usepackage{makeidx}            %Création d'index
 % \usepackage{CJKutf8}            %Japonais avec l'utf8
 % \usepackage[overlap, CJK]{ruby} %Furigana
+% \usepackage{amsmath}            %Better math environments
+% \usepackage{amsfonts}           %Math symbols
 % % ---------------------------------------------------------------
 % % Parametrage pour le japonais
 % \renewcommand{\rubysep}{-0.2ex} %Espace entre les furigana et les kanji
@@ -49,22 +52,30 @@
 % keywordstyle=\color{blue}
 % }
 % % ----------------------------------------------------------------
-
 % \title[]{}
 % \author{Prenom \bsc{Nom}}
 % \date{\today}
-
-% Beamer Settings
+%%%%%%%%%%%%%%%%%%
+% Beamer Settings%
+%%%%%%%%%%%%%%%%%%
 % \usetheme{Warsaw}
 % \title[]{}
+% \subtitle{}
 % \author{}
 % \institute{}
+% \logo{\includegraphics[width=1cm]{logo}}
 % \date{\today}
-
-% \AtBeginSection[]
+% 
+% \AtBeginSection[]          %TOC at sections beginning
 % {
 %   \begin{frame}
 %     \frametitle{Table of Contents}
 %     \tableofcontents[currentsection]
 %   \end{frame}
 % }
+% \renewcommand{\footnotesize}{\scriptsize} %Smaller footnotes
+
+%%%%%%%%%%%
+% Biblatex%
+%%%%%%%%%%%
+% \addbibresource{$HOME/Bibliographies/bibfile}
